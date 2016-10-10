@@ -13,9 +13,9 @@ $crud = new Crud();
 $validation = new Validation();
 
 if(isset($_POST['Submit'])) {	
-	$name = $_POST['name'];
-	$age = $_POST['age'];
-	$email = $_POST['email'];
+	$name = $crud->escape_string($_POST['name']);
+	$age = $crud->escape_string($_POST['age']);
+	$email = $crud->escape_string($_POST['email']);
 		
 	$msg = $validation->check_empty($_POST, array('name', 'age', 'email'));
 	$check_age = $validation->is_age_valid($_POST['age']);
