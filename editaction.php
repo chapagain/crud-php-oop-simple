@@ -8,7 +8,7 @@ $validation = new Validation();
 
 if(isset($_POST['update']))
 {	
-	$id = $_POST['id'];
+	$id = $crud->escape_string($_POST['id']);
 	
 	$name = $crud->escape_string($_POST['name']);
 	$age = $crud->escape_string($_POST['age']);
