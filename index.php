@@ -1,5 +1,6 @@
 <?php
 //including the database connection file
+
 include_once("classes/Crud.php");
 
 $crud = new Crud();
@@ -7,6 +8,7 @@ $crud = new Crud();
 $query = "SELECT * FROM users ORDER BY id DESC";
 $result = $crud->getData($query);
 //echo '<pre>'; print_r($result); exit;
+
 ?>
 
 <html>
@@ -15,6 +17,7 @@ $result = $crud->getData($query);
 </head>
 
 <body>
+
 <a href="add.html">Add New Data</a><br/><br/>
 
 	<table width='80%' border=0>

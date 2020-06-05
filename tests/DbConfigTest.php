@@ -6,6 +6,7 @@ use PHPUnit\Framework\TestCase;
 
 class DbConfigTest extends TestCase
 {
+
     /** @test */
     public function object_created() {
         $db = new DbConfig();
@@ -19,6 +20,5 @@ class DbConfigTest extends TestCase
         $new_connection = $db_co->change_user('toto', '', 'test');
         self::assertFalse($new_connection);
     }
-
 
 }
