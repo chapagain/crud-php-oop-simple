@@ -1,4 +1,7 @@
 <?php
+
+namespace Testspace;
+
 class DbConfig 
 {	
 	private $_host = 'localhost';

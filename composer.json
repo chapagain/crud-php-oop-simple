@@ -1,0 +1,17 @@
+{
+    "name": "pouno/crud-php-oop-simple",
+    "require": {
+        "phpunit/phpunit": "^9.1"
+    },
+    "authors": [
+        {
+            "name": "Hugo TN",
+            "email": "contact@hugotn.fr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Testspace\\" : "classes"
+        }
+    }
+}
