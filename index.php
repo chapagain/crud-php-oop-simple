@@ -8,6 +8,7 @@ $crud = new Crud();
 $query = "SELECT * FROM users ORDER BY id DESC";
 $result = $crud->getData($query);
 //echo '<pre>'; print_r($result); exit;
+var_dump($crud);
 ?>
 
 <html>

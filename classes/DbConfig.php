@@ -2,7 +2,9 @@
 
 namespace Testspace;
 
-class DbConfig 
+use mysqli;
+
+class DbConfig
 {	
 	private $_host = 'localhost';
 	private $_username = 'root';

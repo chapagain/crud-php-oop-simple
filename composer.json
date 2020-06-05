@@ -1,17 +1,18 @@
 {
-    "name": "pouno/crud-php-oop-simple",
-    "require": {
-        "phpunit/phpunit": "^9.1"
+    "name": "emmas/crud-php-oop-simple",
+    "require-dev": {
+        "phpunit/phpunit": "^9.2"
     },
     "authors": [
         {
-            "name": "Hugo TN",
-            "email": "contact@hugotn.fr"
+            "name": "escalart",
+            "email": "emma.scalart@insa-rennes.fr"
         }
     ],
     "autoload": {
-        "psr-4": {
+        "psr-4" : {
             "Testspace\\" : "classes"
         }
-    }
+    },
+    "require": {}
 }
