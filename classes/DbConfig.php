@@ -1,9 +1,14 @@
 <?php
-class DbConfig 
+
+namespace Testspace;
+
+use mysqli;
+
+class DbConfig
 {	
 	private $_host = 'localhost';
 	private $_username = 'root';
-	private $_password = 'root';
+	private $_password = '';
 	private $_database = 'test';
 	
 	protected $connection;
@@ -20,6 +25,10 @@ class DbConfig
 			}			
 		}	
 		
+		return $this->connection;
+	}
+
+	public function getConnection(){
 		return $this->connection;
 	}
 }

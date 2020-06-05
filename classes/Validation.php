@@ -1,4 +1,7 @@
 <?php
+
+namespace Testspace;
+
 class Validation 
 {
 	public function check_empty($data, $fields)

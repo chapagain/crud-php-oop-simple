@@ -1,4 +1,5 @@
 <?php
+use Testspace\Validation;
 // including the database connection file
 include_once("classes/Crud.php");
 include_once("classes/Validation.php");
@@ -25,8 +26,10 @@ if(isset($_POST['update']))
 		echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
 	} elseif (!$check_age) {
 		echo 'Please provide proper age.';
+		echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
 	} elseif (!$check_email) {
-		echo 'Please provide proper email.';	
+		echo 'Please provide proper email.';
+		echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
 	} else {	
 		//updating the table
 		$result = $crud->execute("UPDATE users SET name='$name',age='$age',email='$email' WHERE id=$id");

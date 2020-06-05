@@ -5,6 +5,7 @@
 
 <body>
 <?php
+use Testspace\Validation;
 //including the database connection file
 include_once("classes/Crud.php");
 include_once("classes/Validation.php");
