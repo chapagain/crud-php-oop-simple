@@ -1,4 +1,7 @@
 <?php
+
+use Testspace\DbConfig;
+
 include_once 'DbConfig.php';
 
 class Crud extends DbConfig
