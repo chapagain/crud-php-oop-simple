@@ -27,5 +27,9 @@ class DbConfig
 		
 		return $this->connection;
 	}
+
+	public function getConnection(){
+		return $this->connection;
+	}
 }
 ?>
