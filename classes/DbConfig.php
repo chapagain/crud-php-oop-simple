@@ -8,7 +8,7 @@ class DbConfig
 {	
 	private $_host = 'localhost';
 	private $_username = 'root';
-	private $_password = 'root';
+	private $_password = '';
 	private $_database = 'test';
 	
 	protected $connection;
