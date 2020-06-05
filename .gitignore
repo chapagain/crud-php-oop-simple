@@ -2,4 +2,4 @@
 /idea/
 .phpunit.result.cache
 composer.lock
-composer.jsongit
+composer.json
